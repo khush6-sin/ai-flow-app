@@ -1,6 +1,6 @@
 # Visual AI Flow App
 
-🔗 Demo: ai-flow-app-eight.vercel.app
+🔗 Demo: https://ai-flow-app-eight.vercel.app
 
 An interactive full-stack MERN application that allows users to submit a prompt, receive an AI-generated response, and view the process through a draggable node-based visual workflow.
 
@@ -22,7 +22,7 @@ An interactive full-stack MERN application that allows users to submit a prompt,
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/mhw3011/ai-flow-builder.git
+git clone https://github.com/khush6-sin/ai-flow-app
 cd ai-flow-builder
 ```
 
