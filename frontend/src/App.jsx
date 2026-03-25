@@ -51,13 +51,16 @@ function App() {
 
   const runFlow = async () => {
     try {
-      const res = await fetch("http://localhost:8000/api/ask-ai", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const res = await fetch(
+        "https://ai-flow-app-d120.onrender.com/api/ask-ai",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ prompt }),
         },
-        body: JSON.stringify({ prompt }),
-      });
+      );
 
       const data = await res.json();
       setResponse(data.answer);
@@ -124,7 +127,7 @@ function App() {
       <button
         onClick={async () => {
           try {
-            await fetch("http://localhost:8000/api/save", {
+            await fetch("https://ai-flow-app-d120.onrender.com/api/save", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
